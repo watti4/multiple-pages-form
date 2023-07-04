@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+body{
+    width: 100%;
+    font-size: 16px;
+    background-color: hsl(229, 24%, 87%);
+    box-sizing: border-box;
+    padding: 35px 0 0 260px;
+    
+}
+
+#top-content{
+    background-image: url("images/bg-sidebar-desktop.svg");
+    background-color: black;
+    background-size: cover;
+    float: left;
+    width: 23%;
+    height: 550px;
+    border-radius: 15px;
+    position: relative;
+    top: 9px;
+    left: 12px;
+}
+.navbar{
+    padding-top: 60px;
+    padding-left: 30px;
+    
+}
+.navhead{
+    text-decoration: none;
+    border: solid 1px white;
+    border-radius: 100%;
+    padding: 7px 11px;
+    color: white;
+    font-weight: 900;
+    font-size:0.6em ;
+    box-sizing: border-box;
+    
+}
+.navhead:hover{
+    cursor: pointer;
+}
+.navhead:active{
+    background-color: hsl(228, 100%, 84%);
+    position: relative;
+    top: 1px;
+}
+#about-info{
+    font-size: 0.9em;
+    position: relative;
+    left: 50px;
+    bottom: 43px;
+    margin-top: 20px;
+    color: hsl(231, 11%, 63%);
+    font-size: 0.7em;
+    line-height: 130%;
+}
+#cap{
+    color: white;
+    font-size: 1.1em;
+}
+#formfill{
+    width: 75%;
+    height: 570px;
+    background-color: white;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding-left: 32%;
+    padding-top: 5%;
+    font-family: 'Ubuntu', sans-serif;
+}
+h1{
+    color: hsl(213, 96%, 18%);
+    margin-bottom: 13px;
+    font-size: 1.9em;
+}
+h4{
+    font-size: 0.9em;
+    font-weight: 500;
+    color: hsl(231, 11%, 63%);
+}
+label{
+    display: block;
+    margin-top: 30px;
+    color: hsl(213, 96%, 18%);
+    font-size: 0.8em;
+}
+input{
+    width: 80%;
+    padding: 13px 11px;
+    border-radius: 5px;
+    margin-top: 5px;
+    border: none;
+    outline: none;
+    border: 1px solid #ccc; 
+}
+::placeholder {
+    color: hsl(231, 11%, 63%);
+    font-size: 1.1em;
+    font-weight: 500;
+    word-spacing: 3px;
+    }
+
+button{
+        padding: 14px 8px;
+        background-color: hsl(213, 96%, 18%);
+        color: white;
+        border: none;
+        border-radius: 7px;
+        width: 8%;
+        font-size: 0.9em;
+        position: relative;
+        left: 665px;
+        bottom: 70px;
+        
+    }
+    button:hover{
+        cursor: pointer;
+    }
+    button:active{
+        position: relative;
+        top: -69px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px)
+{
+   
+    body{
+        width: 100%;
+        background-color: #EEF5FF;
+        padding: 1px 1px;     
+        box-sizing: border-box;   
+    }
+   #top-content{
+    background-image: url("images/bg-sidebar-mobile.svg");
+    background-color: black;
+    height: 180px;
+    background-size: cover ;
+    float: none;
+    width: 100%;
+    border-radius: 0%;
+    position: static;
+    }
+    #about-info{
+        display: none;
+    }
+    .navbar{
+        padding-top: 40px;
+        padding-left: 83px;
+        
+    }
+    .navhead{
+        text-decoration: none;
+        border: solid 1px white;
+        border-radius: 100%;
+        margin-right: 25px;
+        padding: 7px 11px;
+        color: white;
+        font-weight: 900;
+        font-size:0.8em ;
+        box-sizing: border-box;
+    }
+    .navhead:hover{
+        cursor: pointer;
+    }
+    .navhead:active{
+        background-color: hsl(228, 100%, 84%);
+        position: relative;
+        top: 1px;
+    }
+    #formfill{
+        width: 93%;
+        height: 380px;
+        margin: 10px auto;
+        background-color: white;
+        border-radius: 10px;
+        padding: 20px 20px;
+        position: relative;
+        bottom: 85px;
+        box-sizing: border-box;
+    }
+    h1{
+        color: hsl(213, 96%, 18%);
+        margin-bottom: 10px;
+        font-size: 1.7em;
+    }
+    h4{
+        width: 80%;
+        font-size: 0.9em;
+        color: hsl(231, 11%, 63%);
+        line-height: 25px;
+    }
+    label{
+        display: block;
+        margin-top: 15px;
+        color: hsl(213, 96%, 18%);
+        font-size: 0.8em;
+    }
+    input{
+        width: 95%;
+        padding: 13px 10px;
+        border-radius: 5px;
+        margin-top: 5px;
+        border: none;
+        outline: none;
+        border: 1px solid #ccc; 
+    }
+    ::placeholder {
+        color: hsl(231, 11%, 63%);
+        font-size: 1.1em;
+        font-weight: 500;
+        word-spacing: 3px;
+      }
+
+    #foot{
+        background-color: white;
+        padding-left: 250px ;  
+        position: relative;
+        bottom: 60px; 
+           
+    }
+    button{
+        padding: 15px 10px;
+        margin:15px 0 ;
+        background-color: hsl(213, 96%, 18%);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        width: 90%;
+        font-size: 0.9em;
+        position: relative;
+        left: -20px;
+        bottom: 0px;
+       
+    }
+    button:hover{
+        cursor: pointer;
+    }
+    button:active{
+        position: relative;
+        top: 1px;
+    }
+}

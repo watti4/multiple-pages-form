@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/favicon-32x32.png">
+    <link href="multipage.css" rel="stylesheet">
+    <link href="monthly.css" rel="stylesheet">
+    <title> Multiple step form layout </title>
+</head>
+<body>
+<header role="banner" id="top-content" >
+    <nav class="navbar">
+             <a class="navhead" href="Index.html"> 1 </a>  <p id="about-info"> STEP 1 <br> <span id="cap"> YOUR INFO </span> </p>
+             <a class="navhead" href="monthly.html"> 2 </a>   <p id="about-info"> STEP 2 <br> <span id="cap"> SELECT PLAN </span> </p>
+             <a class="navhead" href=""> 3 </a> <p id="about-info"> STEP 3 <br> <span id="cap"> ADD-ONS </span> </p>
+             <a class="navhead" href=""> 4 </a>   <p id="about-info"> STEP 4 <br> <span id="cap"> SUMMARY </span> </p>
+  
+    </nav>
+</header>
+<main role="main">
+<div id="formfill">
+        <h1> Select your plan </h1>
+        <h4> You have the option of monthy and yearly billing. </h4>
+    <button id="plan-list"> 
+        <img src="images/icon-arcade.svg" alt="arcade-img">
+        <h5 id="button-head"> Arcade <br> <a> $9/mo</a> </h5>
+    </button>
+    <button id="plan-list"> 
+        <img src="images/icon-advanced.svg" alt="advanced-img">
+        <h5 id="button-head"> Advanced <br> <a> $12/mo</a> </h5>
+    </button>
+    <button id="plan-list"> 
+        <img src="images/icon-pro.svg" alt="pro-img">
+        <h5 id="button-head"> Pro<br> <a> $15/mo</a> </h5>
+    </button> 
+        
+<div id="toggle-path">
+    <p> Monthly </p>
+    <label class="switch">
+        <input type="checkbox">
+        <span class="slider round"></span>
+      </label>
+    <p> Yearly </p>
+</div>   
+</div>
+</main>
+<footer role="" id="foot">
+    <button onclick="document.location='index.html'" id="go-back" > Go Back </button>
+    <button id="next-step"> Next Step </button>
+</footer>
+
+
+    
+</body>

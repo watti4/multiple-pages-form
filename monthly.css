@@ -1,0 +1,136 @@
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+@media screen and (max-width: 600px)
+{
+    #plan-list{
+        width: 100%;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        background-color: transparent;
+        display: flex; 
+        margin-top: 15px;
+        margin-left: 19px;
+        text-align: left;
+        line-height: 20px;
+    }
+    #formfill{
+        height: 500px;
+    }
+    h5{
+        color: hsl(213, 96%, 18%);
+        font-size: 1.1em;
+        position: relative;
+        top: 2px;
+    }
+    a{
+        color: hsl(231, 11%, 63%);
+        font-size: 0.77em;
+    }
+    img{
+        margin-right: 17px;
+        margin-left: 10px;
+    }
+    button:hover{
+        cursor: pointer;
+    }
+    button:active{
+        background-color: hsl(243, 100%, 62%);
+        border: 2px solid hsl(228, 100%, 84%);
+        position: relative;
+        top: 0px;
+    }
+    #foot{
+        display: flex;
+        padding-left: 0%;
+    }
+    #next-step{
+        width: 30%;
+        height: 8vh;
+        position: relative;
+        top: 0px;
+        left: 160px;
+    }
+    #go-back{
+        width: 90px;
+        height: 8vh;
+        color: hsl(231, 11%, 63%);
+        background-color: transparent;
+        font-size: 0.9em;
+        font-weight: 700;
+        position: relative;
+        left: -10px;
+        padding: 10px 6px;
+    }
+    #toggle-path{
+        background-color: blue;
+        width: 100%;
+        display: flex;
+        color: hsl(213, 96%, 18%);
+        padding-left: 80px;
+        box-sizing: border-box;
+        margin-top: 30px;
+
+        
+    }
+
+    
+}

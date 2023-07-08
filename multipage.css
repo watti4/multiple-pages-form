@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
 }
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
 body{
     width: 100%;
     font-size: 16px;
@@ -229,9 +228,8 @@ button{
 
     #foot{
         background-color: white;
-        padding-left: 250px ;  
-        
-           
+        padding-left: 250px ; 
+        height: 20vh;   
     }
     button{
         padding: 15px 10px;
@@ -245,7 +243,6 @@ button{
         position: relative;
         left: -20px;
         bottom: 0px;
-       
     }
     button:hover{
         cursor: pointer;

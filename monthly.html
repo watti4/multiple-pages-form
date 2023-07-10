@@ -19,8 +19,9 @@
   
     </nav>
 </header>
-<main role="main">
-<div id="formfill">
+<main role="main" id="formfill">
+    
+<div  class="visible" id="monthlySide">
         <h1> Select your plan </h1>
         <h4> You have the option of monthy and yearly billing. </h4>
     <button id="plan-list"> 
@@ -35,22 +36,39 @@
         <img src="images/icon-pro.svg" alt="pro-img">
         <h5 id="button-head"> Pro<br> <a> $15/mo</a> </h5>
     </button> 
-        
-<div id="toggle-path">
-    <p> Monthly </p>
-    <label class="switch">
-        <input type="checkbox">
-        <span class="slider round"></span>
-      </label>
-    <p> Yearly </p>
-</div>   
 </div>
+<div class="hidden" id="yearlySide">
+    <h1> Select your plan </h1>
+    <h4> You have the option of monthy and yearly billing. </h4>
+<button id="plan-list"> 
+    <img src="images/icon-arcade.svg" alt="arcade-img">
+    <h5 id="button-head"> Arcade <br> <a> $90/yr</a><br> <span> 2 months free </span> </h5>
+</button>
+<button id="plan-list"> 
+    <img src="images/icon-advanced.svg" alt="advanced-img">
+    <h5 id="button-head"> Advanced <br> <a> $120/yr</a><br> <span> 2 months free </span> </h5>
+</button>
+<button id="plan-list"> 
+    <img src="images/icon-pro.svg" alt="pro-img">
+    <h5 id="button-head"> Pro<br> <a> $150/yr</a><br> <span> 2 months free </span> </h5>
+</button> 
+</div> 
+
+<div id="togglePath">
+    
+    <label class="switch">
+        <input button onclick="toggleDivs()" type="checkbox">
+        <span class="slider round"></span>
+    </label>
+    
+</div>   
+
 </main>
 <footer role="" id="foot">
     <button onclick="document.location='index.html'" id="go-back" > Go Back </button>
     <button id="next-step"> Next Step </button>
 </footer>
 
-
+<script src="toggle.js"> </script>
     
 </body>

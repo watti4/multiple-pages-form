@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="images/favicon-32x32.png">
     <link href="multipage.css" rel="stylesheet">
-    <link href="monthly.css" rel="stylesheet">
+    <link href="subscribePlan.css" rel="stylesheet">
     <title> Multiple step form layout </title>
 </head>
 <body>
 <header role="banner" id="top-content" >
     <nav class="navbar">
              <a class="navhead" href="Index.html"> 1 </a>  <p id="about-info"> STEP 1 <br> <span id="cap"> YOUR INFO </span> </p>
-             <a class="navhead" href="monthly.html"> 2 </a>   <p id="about-info"> STEP 2 <br> <span id="cap"> SELECT PLAN </span> </p>
-             <a class="navhead" href=""> 3 </a> <p id="about-info"> STEP 3 <br> <span id="cap"> ADD-ONS </span> </p>
+             <a class="navhead" href="subscribePlan.html"> 2 </a>   <p id="about-info"> STEP 2 <br> <span id="cap"> SELECT PLAN </span> </p>
+             <a class="navhead" href="addsOn.html"> 3 </a> <p id="about-info"> STEP 3 <br> <span id="cap"> ADD-ONS </span> </p>
              <a class="navhead" href=""> 4 </a>   <p id="about-info"> STEP 4 <br> <span id="cap"> SUMMARY </span> </p>
   
     </nav>
@@ -23,34 +23,34 @@
     
 <div  class="visible" id="monthlySide">
         <h1> Select your plan </h1>
-        <h4> You have the option of monthy and yearly billing. </h4>
-    <button id="plan-list"> 
+        <h4> You have the option of monthy or yearly billing. </h4>
+    <button id="planList" class="planPath"> 
         <img src="images/icon-arcade.svg" alt="arcade-img">
         <h5 id="button-head"> Arcade <br> <a> $9/mo</a> </h5>
     </button>
-    <button id="plan-list"> 
+    <button id="planList" class="planPath"> 
         <img src="images/icon-advanced.svg" alt="advanced-img">
         <h5 id="button-head"> Advanced <br> <a> $12/mo</a> </h5>
     </button>
-    <button id="plan-list"> 
+    <button id="planList" class="planPath"> 
         <img src="images/icon-pro.svg" alt="pro-img">
         <h5 id="button-head"> Pro<br> <a> $15/mo</a> </h5>
     </button> 
 </div>
 <div class="hidden" id="yearlySide">
     <h1> Select your plan </h1>
-    <h4> You have the option of monthy and yearly billing. </h4>
-<button id="plan-list"> 
+    <h4> You have the option of monthy or yearly billing. </h4>
+<button id="planList" class="planPath"> 
     <img src="images/icon-arcade.svg" alt="arcade-img">
     <h5 id="button-head"> Arcade <br> <a> $90/yr</a><br> <span> 2 months free </span> </h5>
 </button>
-<button id="plan-list"> 
+<button id="planList" class="planPath"> 
     <img src="images/icon-advanced.svg" alt="advanced-img">
     <h5 id="button-head"> Advanced <br> <a> $120/yr</a><br> <span> 2 months free </span> </h5>
 </button>
-<button id="plan-list"> 
+<button id="planList" class="planPath"> 
     <img src="images/icon-pro.svg" alt="pro-img">
-    <h5 id="button-head"> Pro<br> <a> $150/yr</a><br> <span> 2 months free </span> </h5>
+    <h5 id="button-head"> Pro<br> <a> $150/yr</a><br> <span id=""> 2 months free </span> </h5>
 </button> 
 </div> 
 

@@ -1,5 +1,11 @@
+*{
+  margin: 0;
+  padding: 0;
+}
 .switch {
   position: relative;
+  left: 180px;
+  top: 10px;
   display: inline-block;
   width: 41px;
   height: 21px;
@@ -10,7 +16,7 @@
   position: absolute;
   left: -65px;
   top: 2px;
-  font-size: 1.1em;
+  font-size: 0.9em;
   color: hsl(213, 96%, 18%);
 }
 
@@ -19,7 +25,7 @@
   position: absolute;
   right: -55px;
   top: 2px;
-  font-size: 1.1em;
+  font-size: 0.9em;
   color: hsl(231, 11%, 63%);
 }
 
@@ -75,50 +81,167 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+#planList{
+  position: relative;
+  left: 0px;
+  top: 30px;
+  width: 25%;
+  height: 22vh;
+  line-height: 17px;
+  box-sizing: border-box;
+  background-color: white;
+  border: 1px solid hsl(229, 24%, 87%);
+  margin-right: 17px;
+ 
+}
+#planList:hover{
+  cursor: pointer;
+  background-color: hsl(229, 24%, 87%);
+  border: 1px solid hsl(243, 100%, 62%); 
+  position: relative;
+  top: 31px;
+}
+
+
+
+#button-head{
+  position: relative;
+  right: -5px;
+  text-align: left;
+}
+img{
+  width: 35px;
+  margin-bottom: 30px;
+  margin-right: 60px;
+  position: relative;
+ 
+}
+.visible {
+  display: block;
+}
+.hidden {
+  display: none;
+}
+#togglePath{
+  background-color: hsl(217, 100%, 97%);
+  width: 84%;
+  height: 6.4vh;
+  margin-top: 80px;
+  color: hsl(213, 96%, 18%);
+  box-sizing: border-box;
+  border-radius: 5px;
+  position: relative;
+  right: 10px;
+  }
+
+  h5{ 
+    font-size: 1.0em;
+    color: hsl(213, 96%, 18%);
+  }
+  a{
+    color: hsl(231, 11%, 63%);
+    font-size: 0.77em;
+  }
+  h5 span{
+    font-size: 0.73em;
+    position: relative;
+    bottom: 2px;
+  }
+  .visible {
+    display: block;
+  }
+.hidden {
+    display: none;
+  }
+  #go-back{
+    width: 90px;
+    height: 8vh;
+    color: hsl(231, 11%, 63%);
+    background-color: transparent;
+    font-size: 0.9em;
+    font-weight: 700;
+    position: relative;
+    left: 330px;
+    padding: 10px 6px;
+}
+#next-step{
+  padding: 14px 8px;
+  background-color: hsl(213, 96%, 18%);
+  color: white;
+  border: none;
+  border-radius: 7px;
+  width: 8%;
+  font-size: 0.9em;
+  position: relative;
+  left: 580px;
+  bottom: 70px;
+}
+#next-step:active{
+  position: relative;
+  top: -69px;
+}
 
 
 
 
-@media screen and (max-width: 600px)
+@media screen and (max-width: 500px)
 {
-    #plan-list{
+    #planList{
         width: 100%;
+        height:13vh;
         border: 1px solid #ccc;
         border-radius: 10px;
         background-color: transparent;
         display: flex; 
         margin-top: 15px;
-        margin-left: 19px;
+        box-shadow: 2px 2px 4px rgba(128, 128, 128, 0.3);
+        padding: 10px 0;
         text-align: left;
         line-height: 20px;
         box-sizing: border-box;
+        position: relative;
+        left: 0px;
+        
     }
     #formfill{
-        height: 550px;
-    }
+      width: 93%;
+      height: 90vh;
+      margin: 10px auto;
+      background-color: white;
+      border-radius: 10px;
+      
+      position: relative;
+      bottom: 85px;
+      box-sizing: border-box;
+  }
     h5{
         color: hsl(213, 96%, 18%);
-        font-size: 1.1em;
+        font-size: 1em;
         position: relative;
         top: 2px;
     }
     a{
         color: hsl(231, 11%, 63%);
-        font-size: 0.77em;
+        font-size: 0.8em;
     }
+    h5 span{
+      font-size: 0.77em;
+    }
+  
     img{
-        margin-right: 17px;
+        width: 40px;
+        margin-right: 11px;
         margin-left: 10px;
+        margin-top: 4px;
     }
-    #plan-list:hover{
+    #planList:hover{
         cursor: pointer;
-    }
-    #plan-list:active{
         background-color: hsl(229, 24%, 87%);
-        border: 2px solid hsl(228, 100%, 84%);
+        border: 1px solid hsl(243, 100%, 62%);
         position: relative;
-        top: 1px;
+        top: 31px;
     }
+    
     #foot{
         display: flex;
         padding-left: 0%;
@@ -130,9 +253,12 @@ input:checked + .slider:before {
         top: 0px;
         left: 160px;
     }
+    #next-step:active{
+      position: relative;
+      top: 1px;
+    }
     #go-back{
         width: 90px;
-        height: 8vh;
         color: hsl(231, 11%, 63%);
         background-color: transparent;
         font-size: 0.9em;
@@ -140,6 +266,10 @@ input:checked + .slider:before {
         position: relative;
         left: -10px;
         padding: 10px 6px;
+    }
+    #go-back{
+      position: relative;
+      top: 1px;
     }
     #togglePath{
         background-color: hsl(217, 100%, 97%);
@@ -151,6 +281,9 @@ input:checked + .slider:before {
         font-size: 0.89em;
         font-weight: 700;
         border-radius: 5px;
+        position: relative;
+        left: -1spx;
+        top: 30px;
     }
     #yearlySide span{
         font-size: 0.77em;
@@ -163,9 +296,12 @@ input:checked + .slider:before {
       }
     .switch{
       position: relative;
-      left: 132px;
-      top: 16px;
+      left: 140px;
+      top: 20px;
+      font-size: 0.85em;
     }
+
+    
     
     
 }

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/favicon-32x32.png">
+    <link href="multipage.css" rel="stylesheet">
+    <link href="subscribePlan.css" rel="stylesheet">
+    <link href="addsOn.css" rel="stylesheet">
+    <title> Multiple step form layout </title>
+</head>
+<header role="banner" id="top-content" >
+    <nav class="navbar">
+             <a class="navhead" href="Index.html"> 1 </a>  <p id="about-info"> STEP 1 <br> <span id="cap"> YOUR INFO </span> </p>
+             <a class="navhead" href="subscribePlan.html"> 2 </a>   <p id="about-info"> STEP 2 <br> <span id="cap"> SELECT PLAN </span> </p>
+             <a class="navhead" href="addsOn.html"> 3 </a> <p id="about-info"> STEP 3 <br> <span id="cap"> ADD-ONS </span> </p>
+             <a class="navhead" href=""> 4 </a>   <p id="about-info"> STEP 4 <br> <span id="cap"> SUMMARY </span> </p>
+    </nav>
+</header>
+<main role="main" id="formfill">
+    
+    <div  class="visible" id="monthlySide">
+        <h1> Pick adds-on </h1>
+        <h4>Adds-on helps enhance your gaming experience.</h4>
+        <button id="addsOn">
+            <input type="checkbox">
+            <h4> Online service <br><span>Access to multiplayer games</span></h4>
+            <a> +$1/mo </a>
+        </button>
+        <button id="addsOn">
+            <input type="checkbox">
+            <h4> Larger storage <br><span>Extra 1TB of cloud save</span></h4>
+            <a> +$2/mo </a>
+        </button>
+        <button id="addsOn">
+            <input type="checkbox">
+            <h4> Customizable profile <br><span>Custom theme on your profile</span></h4>
+            <a> +$2/mo </a>
+        </button> 
+    </div>
+    <div class="hidden" id="yearlySide">
+        <h1> Pick adds-on </h1>
+        <h4>Adds-on helps enhance your gaming experience.</h4>
+        <button id="addsOn">
+            <input type="checkbox">
+            <h4> Online service <br><span>Access to multiplayer games</span></h4>
+            <a> +$10/yr </a>
+        </button>
+        <button id="addsOn">
+            <input type="checkbox">
+            <h4> Larger storage <br><span>Extra 1TB of cloud save</span></h4>
+            <a> +$20/yr </a>
+        </button>
+        <button id="addsOn">
+            <input type="checkbox">
+            <h4> Customizable profile <br><span>Custom theme on your profile</span></h4>
+            <a> +$20/yr </a>
+        </button> 
+    </div> 
+    
+    <div id="togglePath">
+        
+        <label class="switch">
+            <input button onclick="toggleDivs()" type="checkbox">
+            <span class="slider round"></span>
+        </label>
+        
+    </div>   
+    
+    </main>
+    <footer role="" id="foot">
+        <button onclick="document.location='subscribePlan.html'" id="go-back" > Go Back </button>
+        <button id="next-step"> Next Step </button>
+    </footer>
+    
+    <script src="toggle.js"> </script>

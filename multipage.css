@@ -7,8 +7,7 @@ body{
     font-size: 16px;
     background-color: hsl(229, 24%, 87%);
     box-sizing: border-box;
-    padding: 35px 0 0 260px;
-    
+    padding: 35px 0 0 260px; 
 }
 
 #top-content{
@@ -124,25 +123,15 @@ button{
         top: -69px;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
+    
 @media screen and (max-width: 600px)
 {
    
     body{
         width: 100%;
+        
         background-color: #EEF5FF;
-        padding: 1px 1px;     
+        padding: 1px 1px;    
         box-sizing: border-box;   
     }
    #top-content{
@@ -228,8 +217,8 @@ button{
 
     #foot{
         background-color: white;
-        padding-left: 250px ; 
-        height: 20vh;   
+        
+        
     }
     button{
         padding: 15px 10px;
@@ -238,10 +227,10 @@ button{
         color: white;
         border: none;
         border-radius: 5px;
-        width: 90%;
+        width: 25%;
         font-size: 0.9em;
         position: relative;
-        left: -20px;
+        left: -10px;
         bottom: 0px;
     }
     button:hover{
